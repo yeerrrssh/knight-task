@@ -1,6 +1,10 @@
 from ..solver import *
 
 
+def test_correct_creature_of_counter_and_position():
+    assert add_values_for_test() == (1, [])
+
+
 def test_count_3():
     assert solve('D6', 'A2', '3') == (3, 2)
 
