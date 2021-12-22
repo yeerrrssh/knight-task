@@ -2,6 +2,5 @@
 /.coverage
 /horse_module/__pycache__
 /horse_module/.pytest_cache
-/horse_module/tests/
 /horse_module/tests/.pytest_cache
 /horse_module/tests/__pycache__
