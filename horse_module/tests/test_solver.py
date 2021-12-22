@@ -5,6 +5,10 @@ def test_count_3():
     assert solve('D6', 'A2', '3') == (3, 2)
 
 
+def test_count_1():
+    assert solve('D6', 'A2', '1') == (3, 2)
+
+
 def test_correct_values_knight_move():
     assert knight_move((4, 6), 'A2') == 3
 
