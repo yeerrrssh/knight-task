@@ -23,3 +23,8 @@ def test_correct_values_knight_move():
 
 def test_correct_values_knights_collision():
     assert knights_collision((4, 6), (1, 2)) == 2
+
+
+def test_correct_data():
+    add_values_for_test()
+    assert move(4, 6) == ['43', '52', '45', '56', '76', '85', '83', '72']
