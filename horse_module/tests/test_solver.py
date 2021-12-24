@@ -1,20 +1,17 @@
 from ..solver import *
+import pytest
 
 
 def test_correct_creature_of_counter_and_position():
     assert add_values_for_test() == (1, [])
 
 
-def test_count_3():
-    assert solve('D6', 'A2', '3') == (3, 2)
+testbase = [('1', (3, 2)), ('2', (3, 2)), ('3', (3, 2))]
 
 
-def test_count_1():
-    assert solve('D6', 'A2', '1') == (3, 2)
-
-
-def test_count_2():
-    assert solve('D6', 'A2', '2') == (3, 2)
+@pytest.mark.parametrize('num_3, result', testbase)
+def test_count_3(num_3, result):
+    assert solve('D6', 'A2', num_3) == result
 
 
 def test_correct_values_knight_move():
