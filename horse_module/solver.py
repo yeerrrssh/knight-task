@@ -78,7 +78,7 @@ def knight_move(start_position, finish_position):
     Function solves the first task
     :param start_position: Starting position of the knight
     :param finish_position: Expected position of the knight
-    :return: Value of steps (answer)
+    :return: Value of step counter (answer)
     """
     global counter
     mid_results = []
@@ -94,7 +94,7 @@ def knights_collision(first, second):
     Function solves the first task
     :param first: Starting position of the first knight
     :param second: Starting position of the second knight
-    :return: Value of steps (answer)
+    :return: Value of step counter (answer)
     """
     global counter
     first_mid_results = []
